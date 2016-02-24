@@ -21,27 +21,32 @@ Source: Udacity Linux Web Servers Course
 `adduser grader`
 
 *Give the grader the permission to sudo*
-`cd /etc/sudoers.d`
-`nano grader`
+```
+cd /etc/sudoers.d
+nano grader
+```
 
 *Generate key-pair with `ssh-keygen` for user grader and copy private key as `~/.ssh/grader.rsa` in local machine*
 Then on server shell copy public key in the user's .ssh directory
-`mkdir .ssh`
-`nano .ssh/authorized_keys`
-`sudo ssh reload`
-
+```
+mkdir .ssh
+nano .ssh/authorized_keys
+sudo ssh reload
+```
 Source: Udacity Linux Web Servers Course
 
 *Disable key-based authentication in SSH config*
-`nano /etc/ssh/sshd_config`
-`sudo service ssh reload`
-
+```
+nano /etc/ssh/sshd_config
+sudo service ssh reload
+```
 Source: Udacity Linux Web Servers Course
 
 *Update all repository lists and then upgrade currently installed packages*
-`sudo apt-get update`
-`sudo apt-get upgrade`
-
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
 Source: Udacity Linux Web Servers Course
 
 *Change the SSH port from 22 to 2200*
@@ -51,14 +56,14 @@ Restart ssh service to check the connection is available in port 2200.
 Source: Udacity Linux Web Servers Course
 
 *Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123)*
-
-`sudo ufw default deny incoming`
-`sudo ufw default allow outgoing`
-`sudo ufw allow www`
-`sudo ufw allow ntp`
-`sudo ufw allow 2200`
-`sudo ufw enable`
-
+```
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow www
+sudo ufw allow ntp
+sudo ufw allow 2200
+sudo ufw enable
+```
 Source: Udacity Linux Web Servers Course
 
 *Configure the local timezone to UTC*
@@ -68,8 +73,10 @@ To check and confirm it I ran `sudo dpkg-reconfigure tzdata`
 Source: http://www.christopherirish.com/2012/03/21/how-to-set-the-timezone-on-ubuntu-server/
 
 *Install and configure Apache to serve a Python mod_wsgi application*
-`sudo apt-get install apache2`
-`sudo apt-get install libapache2-mod-wsgi`
+```
+sudo apt-get install apache2
+sudo apt-get install libapache2-mod-wsgi
+```
 Tested with a simple mod-wsgi application as suggested for example in http://www.shellhacks.com/en/modwsgi-Hello-World-Example
 
 Source: Udacity Linux Web Servers Course
@@ -84,46 +91,52 @@ Source: http://www.postgresql.org/docs/current/static/sql-grant.html
 https://help.ubuntu.com/community/PostgreSQL
 
 *Install git* 
-
-`sudo apt-get install git`
-`git config --global user.name "fedefilo"`
-`git config --global user.email "federico.vasen@gmail.com"`
-`git config --list`
-
+```
+sudo apt-get install git
+git config --global user.name "fedefilo"
+git config --global user.email "federico.vasen@gmail.com"
+git config --list
+```
 Source: https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04
 
 *Clone repository* 
-
+```
 git clone https://github.com/fedefilo/journal_guide.git
-
+```
 Source: Udacity Git&GitHub Course
 
 *Make .git directory world and group unavailable*
-`sudo chmod 700 .git`
+```
+sudo chmod 700 .git
+```
 
 *Create a virtual environment to run the Flask app*
 sudo apt-get install python-virtualenv
-`virtualenv venv`
-`source venv/bin/activate`
-
+```
+virtualenv venv
+source venv/bin/activate
+```
 Source: https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
 
 *Install all the needed packages for running the app within the virtual env*
-`pip install Flask`
-`pip install SQLAlchemy`
-`pip install six`
-`pip install flask-seasurf`
-`pip install oauth2client`
-`pip install Requests`
-`pip install httplib2`
-`pip install Werkzeug`
-`pip install google_api_python_client`
+```
+pip install Flask
+pip install SQLAlchemy
+pip install six
+pip install flask-seasurf
+pip install oauth2client
+pip install Requests
+pip install httplib2
+pip install Werkzeug
+pip install google_api_python_client
+```
 
 For the psycopg2 library, I followed adivse found on stackoverflow and installed it first outside de venv and then inside
-`sudo apt-get build-dep python-psycopg2`
-`source venv/bin/activate`
-`pip install psycopg2`
-
+```
+sudo apt-get build-dep python-psycopg2
+source venv/bin/activate
+pip install psycopg2
+```
 Source: http://stackoverflow.com/questions/5420789/how-to-install-psycopg2-with-pip-on-python
 
 *Configuring the app*
@@ -148,17 +161,22 @@ Edited `etc/hosts` to disbale annoying error message when using sudo.
 *Configuring cron jobs for automated updates*
 
 I used the package unattended-updates and followed the instructions at https://help.ubuntu.com/lts/serverguide/automatic-updates.html
-
-`sudo apt-get unattended-upgrades`
-`sudo apt-get install unattended-upgrades`
-`sudo nano /etc/apt/apt.conf.d/50unattended-upgrades`
-`sudo nano /etc/apt/apt.conf.d/10periodic`
-
+```
+sudo apt-get unattended-upgrades
+sudo apt-get install unattended-upgrades
+sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
+sudo nano /etc/apt/apt.conf.d/10periodic
+```
 Logs can be checked in the folder `/var/log/unattended-upgrades`
 
 *Preventing login abuse / banning users* 
 I installed and configured fail2ban using the tutorial found at
 https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-14-04
+I banned myself and it worked: 
+```
+2016-02-24 04:02:29,954 fail2ban.actions: WARNING [ssh] Ban 187.234.250.                                                                             134
+2016-02-24 04:12:30,657 fail2ban.actions: WARNING [ssh] Unban 187.234.25                                                                             0.134
+```
 
 *Performance monitoring*
 
@@ -172,4 +190,4 @@ Stats can be accessed at http://52.36.146.146/munin/MuninMonitor/MuninMonitor/in
 
 #### Final remarks
 
-The project was interesting and time consuming. I ran into a lot of issues configuring the app, mainly related to permissions. It helped me strengthen my abilities in the shell and learned a lot. Servers were once something completely strange to me and now I feel more confident. I hope exaplantions are clear!
+The project was interesting and time consuming. I ran into a lot of issues configuring the app, mainly related to permissions. I included the bash history files if you want to take a look. It helped me strengthen my abilities in the shell and learned a lot. Servers were once something completely strange to me and now I feel more confident. I hope exaplantions are clear!
