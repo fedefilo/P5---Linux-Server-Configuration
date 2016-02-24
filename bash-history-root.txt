@@ -1,0 +1,82 @@
+logout
+logut
+logout
+adduser grader
+cd /etc/sudoers.d
+ls
+nano grader
+ls
+apt-get update
+apt-get upgrade
+finger
+apt-get finger
+apt-get install finger
+finger
+ls
+cd ..
+cd home
+/home
+cd /home
+ls
+cd grader
+ls
+ls -al
+mkdir .ssh
+touch .ssh/authorized_keys
+nano .ssh/authorized_keys
+chmod 700 .ssh
+chmod 644 .ssh/authorized_keys
+sudo ssh reload
+cd /etc
+cd /home/grader
+ls
+cd .ssh
+l
+cat authorized_keys
+finger
+nano /etc/ssh/sshd_config
+sudo service ssh reload
+service ssh reload
+service ssh start
+service ssh stop
+service ssh start
+service ssh reload
+nano /etc/ssh/sshd_config
+cat /var/log/auth.log
+nano /etc/ssh/sshd_config
+service ssh reload
+service ssh restart
+ls
+cat authorized_keys
+finger
+finger grader
+nano /etc/ssh/sshd_config
+ls
+rm authorized_keys
+touch authorized_keys
+nano authorized_keys
+service ssh restart
+cat /var/log/auth.log
+reboot
+logout
+cd /home/grader
+ls -al
+chown .ssh grader
+chown grader .ssh
+ls -al
+chgrp grader .ssh
+ls -al
+cd .ssh
+ls -al
+chown grader authorized_keys
+chgrp grader authorized_keys
+cd /etc/sudoers.d
+ls
+logout
+ufw status verbose
+cd /var/log/apache2
+ls
+cat error.log
+car access.log
+cat access.log
+cat error.log

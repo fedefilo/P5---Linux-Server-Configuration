@@ -1,0 +1,980 @@
+sudo
+finger
+sudo reboot
+logout
+sudo apt-get upgrade
+ufw status
+sudo ufw status
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw status
+sudo ufw allow 2200/tcp
+sudo ufw status
+sudo ufw allow www
+sudo ufw allow ntp
+sudo ufw allow 2200
+sudo status numbered
+sudo ufw status numbered
+sudo ufw enable
+time
+date
+sudo apt-get install apache2
+sudo service apache2 status
+cd /etc
+ls
+cd www
+cd /var
+ls
+cd www
+ls
+cd html
+lz
+ls
+cat index.html
+cd /etc/hosts
+ls etc
+cd/etc
+cd /etc
+cat hosts
+cd /var/log
+ls
+cd apache2
+sudo ls apache2
+cat /etc/apache2/sites-available/
+cat /etc/apache2/sites-available/000-default.conf
+cd ..
+cd www/
+ls
+nano html/index.html
+mv index.html apacheintro.html
+cd html
+mv index.html apacheintro.html
+sudo mv index.html apacheintro.html
+ls
+touch index.html
+sudo touch index.html
+sudo nano index.html
+ls -alh /etc/apache2/sites-enables
+ls -alh /etc/apache2/sites-enabled
+cd /etc/apache2/sites-enabled/
+ls
+nano 000-default.conf
+sudo apt-get install libapache2-mod-wsgi
+sudo /etc/apache2/sites-enabled/000-default.conf
+sudo nano /etc/apache2/sites-enabled/000-default.conf
+sudo apache2ctl restart
+sudo nano /var/www/html/myapp.wsgi
+sudo apt-get install postgresql
+psql
+sudo psql
+sudo -u postgres psql postgres
+sudo -u postgres createdb mydb
+pg_ctl stop
+pg_ctlcluster stop
+pg_lsclusters
+pg_ctlcluster 9.3 main stop
+sudo pg_ctlcluster 9.3 main stop
+logout
+.venv/bin/activate
+venv
+. venv
+cd /venv
+ls
+cd /
+ls
+cd etc
+ls
+cd ..
+cd bin
+ls
+cd ac
+cd
+cd journal_guide/
+ls
+cd venv/activate
+cd venv
+ls
+cd bin
+ls
+activate
+./activate
+su ./activate
+sudo ./activate
+sudo activate
+ls
+activate
+cat activate
+.activate
+ls
+nano activate
+source activate
+pip install Flask
+cd ..
+python project.py
+pip install SQLAlchemy
+python project.py
+pip install six
+python project.py
+pip install flask-seasurf
+python project.py
+pip install oauth2client
+python project.py
+pip install Requests
+pip install httplib2
+pip install Werkzeug
+pip install google_api_python_client
+python project.py
+cd venv
+ls
+cd bin
+ls
+logout
+psql
+sudo psql
+sudo -u postgres psql postgres
+createuser
+create user -D -A catalog
+createuser -D -A catalog
+cd /var/psql
+cd /var
+ls
+sudo -u postgres psql postgres
+cd /etc/postgresql/9.3/main
+cat pg_hba.conf
+sudo cat pg_hba.conf
+sudo apt-get update
+sudo apt-get install git
+git config --global user.name "fedefilo"
+git config --global user.email "federico.vasen@gmail.com"
+git config --list
+cd
+;s
+ls
+git clone https://github.com/fedefilo/journal_guide.git
+ls
+cd journal_guide
+ls
+python project.py
+sudo apt-get install python-virtualenv
+virtualenv venv
+.venv /bin/activate
+ls
+cd journal_guide
+ls
+nano database_setup.py
+nano project.py
+psql
+psql catalog
+psql -U catalog
+psql -U catalog -W
+create user -D -A catalog
+createuser -D -A catalog
+psql
+sudo psql -U postgres
+sudo postgres psql template1
+sudo psql -U postgres template1
+sudo -u postgres psql template1
+sudo -u catalog psql template1
+psql -U catalog
+psql -U catalog -D template1
+psql -U catalog -d template1
+psql -U catalog -d template1 -W
+sudo nano /etc/postgresql/9.3/main/pg_hba.conf
+psql -U catalog -d template1 -W
+sudo /etc/init.d/postgresql restart
+psql -U catalog -d template1 -W
+sudo -u postgres psql template1
+sudo -u postgres createuser -D -A -P catalog
+dropuser catalog
+sudo -u postgres dropuser catalog
+sudo -u postgres createuser -D -A -P catalog
+sudo -u postgres psql template1
+sudo -u postgres createdb -O catalog catalog
+cd venv
+ls
+cd bin
+ls
+activate
+./activate
+sudo ./activate
+sudo activate
+ls
+venv activate
+ls
+.activate
+cat activate
+source activate
+cd ..
+ls
+python database_setup.py
+pip install psycopg2
+pip install libpq-dev
+deactivate
+python database_setup.py
+sudo apt-get build-dep python-psycopg2
+source /venv/bin/activate
+source venv/bin/activate
+pip install psycopg2
+python database_setup.py
+python project.py
+nano database_setup.py
+nano project.py
+nano database_setup.py
+python database_setup.py
+nano project.py
+python project.py
+deactivate
+logout
+cd journal_guide/
+ls
+nano catalog.wsgi
+ls
+cd /et
+cd /etc
+cd apache2/
+ls
+cat apache2.comf
+cat apache2.conf
+ls
+cd conf-enabled/
+ls
+cd ..
+cd conf-available/
+ls
+cd ..
+cd sites-available/
+ls
+nano 000-default.conf
+sudo nano 000-default.conf
+cd
+cd ..
+ls
+cd grader
+cd journal_guide/
+nano catalog.wsgi
+ls
+apache2 restart
+/etc/init.d/apache2 restart
+sudo /etc/init.d/apache2 restart
+cd /etc/apache2/sites-available
+ls
+sudo nano 000-default.conf
+sudo /etc/init.d/apache2 restart
+cd ..
+ls
+cd /var/log/apache2/
+sudo ls /var/log/apache2/
+sudo cat /var/log/apache2/access.log
+sudo ls /var/log/apache2/
+sudo cat /var/log/apache2/error.log
+cd /home/grader/journal_guide/
+ls
+sudo ls /var/log/apache2/
+sudo cat /var/log/apache2/other_vhosts_access.log
+logout
+ls
+ls -l
+cd journal_guide/
+ls
+ls -a
+ls -al
+cd
+d
+cd /etc/apache2/
+ls
+cd sites-available/
+ls
+sudo nano 000-default.conf
+sudo cat /var/log/apache2/error.log
+sudo nano 000-default.conf
+cat /home/grader/journal_guide/
+cat /home/grader/journal_guide/catalog.wsgi
+nano /home/grader/journal_guide/catalog.wsgi
+sudo /etc/init.d/apache2 restart
+sudo cat /var/log/apache2/error.log
+cd
+cd journal_guide/
+ls -al
+chmod 644 catalog.wsgi
+ls -al
+cd venc
+cd venv
+cd bin
+ls
+activate
+./activate
+sudo ./activate
+ls
+source activate
+nano helloworld.wsgi
+chmod helloworld.wsgi
+chmod 644 helloworld.wsgi
+deactivate
+cd /var/apache2/
+sudo cat /var/log/apache2/error.log
+cd /etc/apache2/
+cd sites-available/
+sudo nano 000-default.conf
+/etc/init.d/apache2 restart
+sudo /etc/init.d/apache2 restart
+cd /var/log/apache2/
+sudo cat /var/log/apache2/error.log
+sudo nano 000-default.conf
+sudo /etc/init.d/apache2 restart
+sudo cat /var/log/apache2/error.log
+cd
+cd /var
+ls
+cd www
+ls
+cd html
+ls
+cat myapp.wsgi
+cat /etc/apache2/sites-available/00
+cd /etc/apache2/sites-available/
+nano 000-default.conf
+sudo nano 000-default.conf
+sudo /etc/init.d/apache2 restart
+sudo nano 000-default.conf
+sudo /etc/init.d/apache2 restart
+cd /var/www
+ls -al
+cd ..
+ls
+ls -al
+cd ..
+cd
+cd /var/www/html
+ls
+ls -al
+cd
+ls
+ls -al
+chmod 755 journal_guide
+cd journal_guide/
+ls -al
+cd ..
+ls
+nano myapp.wsgi
+ls
+ls -al
+sudo nano /etc/apache2/sites-available/000-default.conf
+sudo /etc/init.d/apache2 restart
+sudo cat /etc/log/apache2
+sudo cat /var/log/apache2/error.log
+sudo cat /var/log/apache2/access.log
+cd /var
+ls
+mv /home/grader/journal_guide/ /var
+sudo mv /home/grader/journal_guide/ /var/journal_guide
+ls
+cd journal_guide/
+ls
+cd
+ls
+mv myapp.wsgi /var/journal_guide/
+ls
+cd /var/journal_guide/
+ls
+ls -l
+sudo nano /etc/apache2/sites-available/000-default.conf
+sudo /etc/init.d/apache2 restart
+sudo nano /etc/apache2/sites-available/000-default.conf
+sudo /etc/init.d/apache2 restart
+sudo cat /var/log/error.log
+sudo cat /var/log/apache2/error.log
+sudo nano /etc/apache2/sites-available/000-default.conf
+sudo /etc/init.d/apache2 restart
+sudo nano /etc/apache2/sites-available/000-default.conf
+sudo /etc/init.d/apache2 restart
+sudo cat /var/log/apache2/error.log
+cd ..
+cd www/html
+ls
+sudo nano myapp.wsgi
+sudo nano /etc/apache2/sites-available/000-default.conf
+sudo /etc/init.d/apache2 restart
+sudo cat /var/www/html/myapp.wsgi
+ls
+car index.html
+cat index.html
+sudo nano /etc/apache2/sites-available/000-default.conf
+sudo /etc/init.d/apache2 restart
+cd ..
+cd journal_guide/
+ls
+cat catalog.wsgi
+sudo nano catalog.wsgi
+mv catalog.wsgi /var/www/html
+sudo mv catalog.wsgi /var/www/html
+sudo nano /etc/apache2/sites-available/000-default.conf
+sudo /etc/init.d/apache2 restart
+sudo cat /var/log/apache2/error.log
+cd ../www/html
+sudo nano catalog.wsgi
+sudo /etc/init.d/apache2 restart
+sudo cat /var/log/apache2/error.log
+sudo cat /var/log/apache2/access.log
+sudo cat /var/log/apache2/error.log
+sudo cat /var/log/apache2/
+ls /var/log/apache2/
+sudo ls /var/log/apache2/
+sudo cat /var/log/apache2/other_vhosts_access.log
+sudo /etc/init.d/apache2 restart
+sudo cat /var/log/httpd
+sudo ls /var/log
+sudo ls -l /var/log
+sudo cat /var/log/syslog
+sudo ls -l /var/log
+sudo cat /var/log/lastlog
+sudo cat /var/log/auth.log
+sudo ls -l /var/log
+cd ..
+cd ../journal_guide/
+nano project.py
+sudo /etc/init.d/apache2 restart
+sudo cat /var/log/apache2/error.log
+nano project.py
+sudo /etc/init.d/apache2 restart
+nano project.py
+sudo cat /var/log/apache2/error.log
+nano project.py
+python project.py
+source venv/bin/activate
+python project.py
+ls
+pip install -r requirements.txt
+sudo pip install -r requirements.txt
+python project.py
+pip install psycopg2
+sudo pip install psycopg2
+python project.py
+deactivate
+sudo /etc/init.d/apache2 restart
+source venv/bin/activate
+python project.py
+nano project.py
+python project.py
+nano project.py
+sudo /etc/init.d/apache2 restart
+sudo cat /var/log/apache2/error.log
+nano project.py
+python project.py
+deactivate
+pip
+cd ..
+cd www
+mkdir FlaskApp
+sudo mkdir FlaskApp
+cd FlaskApp
+sudo mkdir FlaskApp
+cd FlaskApp/
+sudo mkdir static templates
+cd ..
+cd..
+cd ..
+cd journal_guide/
+ls
+cd ..
+sudo mv journal_guide /var/www/FlaskApp/journal_guide
+ls
+cd www
+ls
+cd FlaskApp
+ls
+rmdir FlaskApp/
+sudo rmdir FlaskApp/
+sudo rmdir -r FlaskApp/
+sudo rmdir -f FlaskApp/
+cd FlaskApp/
+ls
+sudo rmdir static templates/
+cd ..
+sudo rmdir FlaskApp/
+ls
+cd journal_guide/
+cd ..
+sudo mv FlaskApp journal_guide
+ls
+cd journal_guide/
+ls
+cd journal_guide/
+ls
+sudo nano __init.py__
+source venv/bin/activate
+sudo python __init__.py
+ls
+cat __init__.py
+ls
+sudo mv __init.py__ __init__.py
+sudo python __init_.py
+ls
+python __init__.py
+deactivate
+sudo nano /etc/apache2/sites-available/journal_guide.conf
+sudo a2ensite journal_guide
+cd ..
+sudo nano journal_guide.wsgi
+ls -l
+cd journal_guide/
+ls
+ls -al
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+sudo ls /etc/apache2/
+sudo ls /etc/apache2/sites-available/
+sudo nano /etc/apache2/sites-available/000-default.conf
+sudo service apache2 restart
+sudo nano /etc/apache2/sites-available/000-default.conf
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+sudo nano /etc/apache2/sites-available/000-default.conf
+sudo mv /etc/apache2/sites-available/000-default.conf hola
+ls
+cat hola
+sudo service apache2 restart
+sudo nano /etc/apache2/apache2.conf
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+cd ..
+ls
+nano journal_guide
+nano journal_guide.wsgi
+sudo nano journal_guide.wsgi
+sudo service apache2 restart
+cd ..
+cd journal_guide/
+ls
+cd journal_guide/
+ls
+cat __init__.py
+mv __init__.py residuo.py
+mv project.py __init__.py
+sudo service apache2 restart
+ls -al
+python lots-of-journals.py
+psql catalog
+sudo postgres -U catalog catalog
+sudo su - postgres
+ls
+python database_setup.py
+cat database_setup.py
+python lots-of-journals.py
+psql catalog
+psql -U catalog -d catalog
+sudo nano lots-of-journals.py
+python lots-of-journals.py
+sudo cat /var/log/apache2/error.log
+ls
+ls -al
+nano __init__.py
+mv project.py __init__.py
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+logout
+sudo apt-get upgrade
+sudo cat /var/log/apache2/error.log
+sudo service apache2 restart
+logout
+sudo
+sudo nano /etc/hostname
+sudo nano /etc/hosts
+sudo
+logout
+sudo
+logout
+sudo cat /var/log/apache2/error.log
+cd /var/www/journal_guide/journal_guide/
+ls
+nano __init__.py
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+cd sta
+cd static/
+ls
+cd pictures/
+ls
+cd ..
+ls -l
+cd pictures/
+ls
+ls -l
+cd ..
+nano __init__.py
+cd ..
+ls
+sudo nano /etc/apache2/sites-available/journal_guide.conf
+sudo services apache2 restart
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+ls -al
+chown
+chown --help
+sudo chown root:root journal_guide
+ls-a
+ls -a
+ls -al
+cd journal_guide/
+ls
+ls -al
+sudo chown root:root *
+ls -al
+sudo chmod 700 .git
+ls -al
+cd static/
+ls -l
+sudo chown root:root *
+cd pictures/
+ls -al
+sudo chown root:root *
+sudo cat /var/log/apache2/error.log
+sudo nano /etc/apache2/sites-available/journal_guide.conf
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+cd ..
+ls
+ls -al
+sudo chmod 777 static/
+ls -al
+cd static
+ls
+ls -al
+chmod 777 pictures
+sudo chmod 777 pictures
+ls -al
+cd pictures
+ls -al
+sudo chmod 777 *
+ls -al
+sudo cat /var/log/apache2/error.log
+sudo service apache2 restart
+cd ..
+ls
+chown -R grader:www-data journal_guide
+sudo chown -R grader:www-data journal_guide
+ls -al
+cd journal_guide/
+ls -al
+cd journal_guide/
+ls -al
+cd ..
+sudo chmod -R g+s journal_guide
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+cd journal_guide/static/pictures/
+ls
+ls -al
+sudo chown www-data:www-data *
+ls -al
+chmod 644 *
+sudo chmod 644 *
+ls -al
+cd ..
+ls -al
+sudo chown www-data:www-data *
+cd ..
+ls -al
+sudo chown www-data:www-data *
+ls -al
+cat project.pys.save
+cat project.py.save
+ls -al
+sudo chmod 644 *
+ls -al
+sudo chmod 700 static templates
+sudo nano /etc/apache2/apache2.conf
+sudo nano /etc/apache2/envvars
+ls -al
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+psql -U catalog -d catalog
+sudo cat /var/log/apache2/error.log
+sudo cat /var/log/apache2/access.log
+sudo service apache2 restart
+cd static/
+ls
+ls -al
+cd static/
+sudo usermod -g www-data grader
+cd static/
+ls -al
+chmod 664 static templates
+sudo chmod 664 static templates
+cd static/
+cd static
+ls
+ls -al
+sudo cd static
+sudo ls static/
+sudo ls static/pictures
+sudo ls -al static/pictures
+sudo cat /var/log/apache2/error.log
+cd
+cd /var/www/journal_guide/journal_guide/
+ls
+ls -al
+sudo chmod 755 static screenshots templates
+sudo cat /var/log/apache2/error.log
+cd static
+ls
+ls -al
+sudo chmod 755 pictures
+cd pictures/
+ls
+ls -al
+chmod 644 *
+sudo chmod 644 *
+ls -al
+cd ..
+ls -al
+cd ..
+ls -al
+sudo chown grader:www-data *.py
+ls -al
+sudo chown grader:www-data client_secrets.json
+sudo cat /var/log/apache2/error.log
+cd static/pictures/
+ls
+mv 12.jpg default.jpg
+sudo mv 12.jpg default.jpg
+sudo cat /var/log/apache2/error.log
+ls
+sudo mv 13.jpg default.jpg
+sudo cat /var/log/apache2/error.log
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+psql -U catalog -d catalog
+cd ..
+nano __init__.py
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+cd /var/www/
+cd journal_guide/journal_guide/static/pictures/
+curl https://raw.githubusercontent.com/fedefilo/journal_guide/master/static/pictures/default.jpg
+ls
+wget https://raw.githubusercontent.com/fedefilo/journal_guide/master/static/pictures/default.jpg
+l
+sudo wget https://raw.githubusercontent.com/fedefilo/journal_guide/master/static/pictures/default.jpg
+ls
+ls -l
+sudo chown www-data default.jpg
+ls 0k
+ls -l
+sudo cat /var/log/apache2/error.log
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+sudo service apache2 restart
+cd ..
+nano database_setup.py
+nano project.py
+nano __init__.py
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+nano __init__.py
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+nano __init__.py
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+sudo service apache2 restart
+sudo cat /var/log/apache2/error.log
+cd static/pictures/
+ls
+sudo cat /var/log/apache2/error.log
+sudo service apache2 restart
+cd /var/log/
+ls
+cd postgresql/
+ls
+cat postgresql-9.3-main.log
+sudo cat postgresql-9.3-main.log
+sudo cat postgresql-9.3-main.log.1
+logout
+psql -U postgres -d catalog
+su -U postgres psql
+sudo psql
+sudo -u postgres psql catalog
+sudo -u postgres psql
+sudo -u postgres psql catalog
+psql -U catalog -d catalog
+sudo service apache2 restart
+psql -U catalog -d catalog
+logout
+psql -U catalog
+dropdb catalog
+sudo dropdb catalog
+sudo -u postgres psql catalog
+sudo -u postgres psq
+sudo -u postgres psql
+psql -U catalog -d catalog2
+cd /var/www/journal_guide/journal_guide/
+ls
+nano database_setup.py
+nano lots-of-journals.py
+nano __init__.py
+source venv/bin/activate
+sudo source venv/bin/activate
+cd venv
+ls -al
+sudo chmod venv 775 venv
+sudo chmod 775 venv
+cd venv
+source bin/activate
+cd ..
+python database_setup.py
+python lots-of-journals.py
+deactivate
+sudo service apache2 restart
+cd static/pictures/
+ls
+ls -al
+cd ..
+cd ..cdcdcd
+cd ..
+nano _
+nano __init__.py
+sudo service apache2 restart
+cd static/
+cd pictures/
+ls
+logout
+jobs
+fg
+jobs
+lgoout
+logout
+cd /var/www/journal_guide/journal_guide/
+ls
+nano __init__.py
+sudo service apache2 restart
+cd static/pictures/
+ls
+ls -al
+psql -U catalog
+sudo nano /etc/ssh/sshd_config
+service ssh restart
+sudo service ssh restart
+cd ..
+ls
+ls -al
+sudo nano /etc/apache2/httpd.conf
+cd /etc/apach2
+cd /etc/apache2
+ls
+sudo nano apache2
+sudo nano apache2.conf
+sudo services apache2 restart
+sudo service apache2 restart
+sudo apt-get unattended-upgrades
+sudo apt-get install unattended-upgrades
+sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
+sudo nano /etc/apt/apt.conf.d/10periodic
+ls -al /etc/cron.daily
+ls -al /etc/cron.daily/apt
+ls -al /etc/cron.daily/apt/
+cd /etc/cron.daily/
+ls
+cd apt
+ls -al
+cat apt
+cat /var/log/unattended-upgrades/
+cd /var/log/unattended-upgrades/
+ls
+cat unattended-upgrades-shutdown.log
+ntpq
+sudo apt-get install ntp
+ntq
+ntpq
+sudo ntp -q
+sudo ntpq -p
+ntpdate
+sudo ntpdate
+ntpq --help
+sudo apt-get upgrade
+sudo apt-get update
+sudo apt-get upgrade
+sudo reboot
+logout
+cd /var/log/
+ls
+cat ntpstats/
+cd ntpstats/
+ls
+ls -al
+cd ..
+cd unattended-upgrades/
+ls
+cat unattended-upgrades-shutdown.log
+cd /var/log/
+ls
+cat ufw.log
+sudo cat ufw.log
+sudo ufw allow 9100
+rmdir Downloads/
+rmdir -f Downloads/
+rmdir -r Downloads/
+cd Downloads/
+ls
+rm *
+cd ..
+rmdir Downloads/
+ls
+sudo rm -rf Prometheus/
+cd /
+ls
+cd etc
+ls
+cd init
+ls
+rm node_exporter.conf
+sudo rm node_exporter.conf
+sudo reboot
+cd /var/log/
+ls
+cd munin
+ls
+car munin-node.log
+cat munin-node.log
+sudo netstat -peanut
+# lsof | grep TCP | grep LISTEN
+lsof | grep TCP | grep LISTEN
+sudo lsof | grep TCP | grep LISTEN
+sudo netstat -peanut
+sudo services munin-node stop
+sudo service munin-node stop
+sudo apt-get remove munin-node
+/usr/sbin/apachectl -M | grep -i cgi
+sudo apt-get install -y munin
+sudo apt-get autoremove munin
+sudo apt-get install -y munin
+sudo nano /etc/munin/munin.conf
+cd /var/www
+ls
+ls -al
+sudo nano /etc/munin/munin.conf
+sudo nano /etc/munin/apache.conf
+sudo service apache2 restart
+sudo ufw disable
+sudo service munin-node restart
+glances
+ls
+cd munin
+ls
+sudo ufw enable
+sudo ufw status numbered
+sudo ufw delete 13
+sudo ufw delete 14
+sudo ufw status numbered
+sudo ufw delete 13
+sudo ufw delete 12
+sudo ufw status numbered
+sudo ufw delete 5
+sudo ufw delete 6
+sudo ufw delete 7
+sudo ufw status numbered
+sudo ufw delete 5
+logout
