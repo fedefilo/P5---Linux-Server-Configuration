@@ -14,6 +14,8 @@ RSA private key for user is provided in "notes to reviewer section"
 
 Logged in as root using provided private key.
 
+Source: Udacity Linux Web Servers Course
+
 *Create a new user named grader*
 
 `adduser grader`
@@ -28,19 +30,25 @@ Then on server shell copy public key in the user's .ssh directory
 `nano .ssh/authorized_keys`
 `sudo ssh reload`
 
+Source: Udacity Linux Web Servers Course
+
 *Disable key-based authentication in SSH config*
 `nano /etc/ssh/sshd_config`
 `sudo service ssh reload`
+
+Source: Udacity Linux Web Servers Course
 
 *Update all repository lists and then upgrade currently installed packages*
 `sudo apt-get update`
 `sudo apt-get upgrade`
 
+Source: Udacity Linux Web Servers Course
 
 *Change the SSH port from 22 to 2200*
 Edit `/etc/ssh/sshd_config` to change the SSH port.
 Restart ssh service to check the connection is available in port 2200.
 
+Source: Udacity Linux Web Servers Course
 
 *Configure the Uncomplicated Firewall (UFW) to only allow incoming connections for SSH (port 2200), HTTP (port 80), and NTP (port 123)*
 
@@ -51,20 +59,29 @@ Restart ssh service to check the connection is available in port 2200.
 `sudo ufw allow 2200`
 `sudo ufw enable`
 
+Source: Udacity Linux Web Servers Course
+
 *Configure the local timezone to UTC*
 Zone was already configured to UTC by default
 To check and confirm it I ran `sudo dpkg-reconfigure tzdata`
+
+Source: http://www.christopherirish.com/2012/03/21/how-to-set-the-timezone-on-ubuntu-server/
 
 *Install and configure Apache to serve a Python mod_wsgi application*
 `sudo apt-get install apache2`
 `sudo apt-get install libapache2-mod-wsgi`
 Tested with a simple mod-wsgi application as suggested for example in http://www.shellhacks.com/en/modwsgi-Hello-World-Example
 
+Source: Udacity Linux Web Servers Course
+
 *Install and configure PostgreSQL*
 `sudo apt-get install postgresql`
 Checked in `/etc/postgresql/9.3/main/pg_hba.conf` that no remote connections are allowed to postgresql server.
 Using the `createuser` command line tool (wrapper for SQL CREATE USER) I created user catalog with no database creation privilege.
 Then logged in as root to local postgresql server using `sudo -u postgres psql postgres` and created database `catalog2`. Granted all privileges to user `catalog` in database `catalog2`.
+
+Source: http://www.postgresql.org/docs/current/static/sql-grant.html
+https://help.ubuntu.com/community/PostgreSQL
 
 *Install git* 
 
@@ -73,9 +90,13 @@ Then logged in as root to local postgresql server using `sudo -u postgres psql p
 `git config --global user.email "federico.vasen@gmail.com"`
 `git config --list`
 
+Source: https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04
+
 *Clone repository* 
 
 git clone https://github.com/fedefilo/journal_guide.git
+
+Source: Udacity Git&GitHub Course
 
 *Make .git directory world and group unavailable*
 `sudo chmod 700 .git`
@@ -84,6 +105,8 @@ git clone https://github.com/fedefilo/journal_guide.git
 sudo apt-get install python-virtualenv
 `virtualenv venv`
 `source venv/bin/activate`
+
+Source: https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
 
 *Install all the needed packages for running the app within the virtual env*
 `pip install Flask`
@@ -101,9 +124,12 @@ For the psycopg2 library, I followed adivse found on stackoverflow and installed
 `source venv/bin/activate`
 `pip install psycopg2`
 
+Source: http://stackoverflow.com/questions/5420789/how-to-install-psycopg2-with-pip-on-python
+
 *Configuring the app*
 
 Made changes in the app code to tell SQLAlchemy the DBMS is now a postgresql and not SQLite. I had also to make changes to the code, since datatypes are more strict in postgres and 'None' values had to be included in a couple of cases. I also had to add `session.commit()` commands to save the changes in places that were not needed by sqlite.
+http://docs.sqlalchemy.org/en/latest/dialects/postgresql.html#module-sqlalchemy.dialects.postgresql.psycopg2
 
 Made changes in the app regarding the navigation of the filesystem and changed relative paths for absolute ones. 
 
@@ -146,4 +172,4 @@ Stats can be accessed at http://52.36.146.146/munin/MuninMonitor/MuninMonitor/in
 
 #### Final remarks
 
-The project was interesting and time consuming. I ran into a lot of issues configuring the app, mainly related to permissions. It helped me strengthen my abilities in the shell and learned a lot. Servers were once something completely strange to me and now I feel more confident.
+The project was interesting and time consuming. I ran into a lot of issues configuring the app, mainly related to permissions. It helped me strengthen my abilities in the shell and learned a lot. Servers were once something completely strange to me and now I feel more confident. I hope exaplantions are clear!
